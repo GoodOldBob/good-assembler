@@ -46,7 +46,7 @@ for line in toRead:
 	    toWrite.write("1100")
         elif broken[0] == "bne":
 	    toWrite.write("1101")
-	toWrite.write((bin(int(broken[1])+12)[2:]).zfill(5))
+	toWrite.write((bin(int(broken[1])+8)[2:]).zfill(5))
         toWrite.write("     //"+broken[0]+" "+broken[1]+"\n")
 toWrite.close()
 toRead.close()
